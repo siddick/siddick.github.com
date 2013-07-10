@@ -3,7 +3,7 @@
   <head>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link href='https://plus.google.com/103719245554204460362' rel='publisher'>
-    <title>Home - Siddick</title>
+    <title>Validate PayPal IPN message - Siddick</title>
     <link href='/assets/application-806bac689b9cee2ce8c9ca867ff2ca3d.css' rel='stylesheet'>
     <!--[if lt IE 9]>
       <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js' type='text/javascript'>
@@ -31,7 +31,7 @@
                   <i class='icon-strikethrough icon-large'></i>
                 </a>
               </li>
-              <li class="active"><a href="/">Home</a></li>
+              <li class=""><a href="/">Home</a></li>
               <li class=""><a href="/about/">About</a></li>
             </ul>
           </div>
@@ -42,22 +42,11 @@
       <div class='content'>
         <header class='page-header'>
           <h1>
-            <span class='icon-home pull-right'></span>
-            Home
+            <span class='icon-code pull-right'></span>
+            Validate PayPal IPN message
           </h1>
         </header>
         <article>
-          <header>
-            <div class='pull-right'>
-              <span class="icon-tag"></span> <a href="/tags/ruby/">ruby</a>, <a href="/tags/paypal/">paypal</a>
-              <span class='icon-time'></span>
-              11 June 2013
-            </div>
-            <h4>
-              <span class='icon-code'></span>
-              <a href="/validate-paypal-ipn-message/">Validate PayPal IPN message</a>
-            </h4>
-          </header>
           <p>
             Using
             <a href='https://github.com/paypal/sdk-core-ruby'>paypal-sdk-core</a>
@@ -75,28 +64,10 @@
             <div class="code"><pre>ipn_message = request.raw_post  <span class="comment"># raw post data send by PayPal IPN</span>&#x000A;<span class="keyword">if</span> <span class="constant">PayPal</span>::<span class="constant">SDK</span>::<span class="constant">Core</span>::<span class="constant">API</span>::<span class="constant">IPN</span>.valid?(ipn_message)&#x000A;  print <span class="string"><span class="delimiter">&quot;</span><span class="content">IPN message is valid</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="keyword">end</span></pre></div>
           </div>
         </article>
-        <article>
-          <header>
-            <div class='pull-right'>
-              <span class="icon-tag"></span> <a href="/tags/ruby/">ruby</a>
-              <span class='icon-time'></span>
-              12 May 2013
-            </div>
-            <h4>
-              <span class='icon-film'></span>
-              <a href="/hello-world/">Hello World</a>
-            </h4>
-          </header>
-          <p>Just a hello world program</p>
-          
-          <div><div class="CodeRay">
-            <div class="code"><pre><span class="keyword">def</span> <span class="function">hello</span>&#x000A;  puts <span class="string"><span class="delimiter">&quot;</span><span class="content">hello world</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="keyword">end</span></pre></div>
-          </div>
-          </div>
-        </article>
-        <ul class='pager'>
-        </ul>
+        <div class="fb-comments" data-width="700" data-href="http://siddick.com/validate-paypal-ipn-message/"></div>
       </div>
     </div>
+    <div id='fb-root'></div>
+    <script id='facebook-jssdk' src='http://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=369626729746568'></script>
   </body>
 </html>
