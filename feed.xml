@@ -2,37 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://siddick.com/</id>
   <title>Siddick Blog</title>
-  <updated>2013-06-10T18:30:00Z</updated>
+  <updated>2013-05-11T18:30:00Z</updated>
   <link rel="alternate" href="http://siddick.com/"/>
   <link rel="self" href="http://siddick.com/feed.xml"/>
   <author>
     <name>siddick</name>
     <uri>https://github.com/siddick</uri>
   </author>
-  <entry>
-    <id>tag:siddick.com,2013-06-11:/validate-paypal-ipn-message/</id>
-    <title type="html">Validate PayPal IPN message</title>
-    <published>2013-06-10T18:30:00Z</published>
-    <updated>2013-06-10T18:30:00Z</updated>
-    <link rel="alternate" href="http://siddick.com/validate-paypal-ipn-message/"/>
-    <content type="html">&lt;p&gt;
-  Using
-  &lt;a href='https://github.com/paypal/sdk-core-ruby'&gt;paypal-sdk-core&lt;/a&gt;
-  gem to validate PayPal IPN message.
-&lt;/p&gt;
-&lt;div class="CodeRay"&gt;
-  &lt;div class="code"&gt;&lt;pre&gt;require &lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;span class="content"&gt;paypal-sdk-core&lt;/span&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&amp;#x000A;&lt;span class="constant"&gt;PayPal&lt;/span&gt;::&lt;span class="constant"&gt;SDK&lt;/span&gt;.configure( &lt;span class="symbol"&gt;:mode&lt;/span&gt; =&amp;gt; &lt;span class="symbol"&gt;:sandbox&lt;/span&gt; )&amp;#x000A;&lt;span class="keyword"&gt;if&lt;/span&gt; &lt;span class="constant"&gt;PayPal&lt;/span&gt;::&lt;span class="constant"&gt;SDK&lt;/span&gt;::&lt;span class="constant"&gt;Core&lt;/span&gt;::&lt;span class="constant"&gt;API&lt;/span&gt;::&lt;span class="constant"&gt;IPN&lt;/span&gt;.valid?(&lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;span class="content"&gt;IPN message to validate&lt;/span&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;)&amp;#x000A;  print &lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;span class="content"&gt;IPN message is valid&lt;/span&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&amp;#x000A;&lt;span class="keyword"&gt;end&lt;/span&gt;&amp;#x000A;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;To configure live mode&lt;/p&gt;
-&lt;div class="CodeRay"&gt;
-  &lt;div class="code"&gt;&lt;pre&gt;&lt;span class="constant"&gt;PayPal&lt;/span&gt;::&lt;span class="constant"&gt;SDK&lt;/span&gt;.configure( &lt;span class="symbol"&gt;:mode&lt;/span&gt; =&amp;gt; &lt;span class="symbol"&gt;:live&lt;/span&gt; )&amp;#x000A;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Validate IPN message received by rails app&lt;/p&gt;
-&lt;div class="CodeRay"&gt;
-  &lt;div class="code"&gt;&lt;pre&gt;ipn_message = request.raw_post  &lt;span class="comment"&gt;# raw post data send by PayPal IPN&lt;/span&gt;&amp;#x000A;&lt;span class="keyword"&gt;if&lt;/span&gt; &lt;span class="constant"&gt;PayPal&lt;/span&gt;::&lt;span class="constant"&gt;SDK&lt;/span&gt;::&lt;span class="constant"&gt;Core&lt;/span&gt;::&lt;span class="constant"&gt;API&lt;/span&gt;::&lt;span class="constant"&gt;IPN&lt;/span&gt;.valid?(ipn_message)&amp;#x000A;  print &lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;span class="content"&gt;IPN message is valid&lt;/span&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&amp;#x000A;&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-</content>
-  </entry>
   <entry>
     <id>tag:siddick.com,2013-05-12:/hello-world/</id>
     <title type="html">Hello World</title>

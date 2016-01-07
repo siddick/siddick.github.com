@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <link href='https://plus.google.com/103719245554204460362' rel='publisher'>
     <title>Ruby - Siddick</title>
-    <link href='/assets/application-806bac689b9cee2ce8c9ca867ff2ca3d.css' rel='stylesheet'>
+    <link href='/assets/application-be3bf9dd9210efad9a78b5f9ed99d4b0.css' rel='stylesheet'>
     <!--[if lt IE 9]>
       <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js' type='text/javascript'>
     <![endif]-->
@@ -18,7 +19,7 @@
               <a href='https://github.com/siddick'>
                 <span class='icon-github'></span>
               </a>
-              <a href='https://twitter.com/siddickInside'>
+              <a href='https://twitter.com/2siddick'>
                 <span class='icon-twitter'></span>
               </a>
               <a href='http://www.facebook.com/siddick'>
@@ -49,35 +50,6 @@
         <article>
           <header>
             <div class='pull-right'>
-              <span class="icon-tag"></span> <a href="/tags/ruby/">ruby</a>, <a href="/tags/paypal/">paypal</a>
-              <span class='icon-time'></span>
-              11 June 2013
-            </div>
-            <h4>
-              <span class='icon-code'></span>
-              <a href="/validate-paypal-ipn-message/">Validate PayPal IPN message</a>
-            </h4>
-          </header>
-          <p>
-            Using
-            <a href='https://github.com/paypal/sdk-core-ruby'>paypal-sdk-core</a>
-            gem to validate PayPal IPN message.
-          </p>
-          <div class="CodeRay">
-            <div class="code"><pre>require <span class="string"><span class="delimiter">&quot;</span><span class="content">paypal-sdk-core</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="constant">PayPal</span>::<span class="constant">SDK</span>.configure( <span class="symbol">:mode</span> =&gt; <span class="symbol">:sandbox</span> )&#x000A;<span class="keyword">if</span> <span class="constant">PayPal</span>::<span class="constant">SDK</span>::<span class="constant">Core</span>::<span class="constant">API</span>::<span class="constant">IPN</span>.valid?(<span class="string"><span class="delimiter">&quot;</span><span class="content">IPN message to validate</span><span class="delimiter">&quot;</span></span>)&#x000A;  print <span class="string"><span class="delimiter">&quot;</span><span class="content">IPN message is valid</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="keyword">end</span>&#x000A;</pre></div>
-          </div>
-          <p>To configure live mode</p>
-          <div class="CodeRay">
-            <div class="code"><pre><span class="constant">PayPal</span>::<span class="constant">SDK</span>.configure( <span class="symbol">:mode</span> =&gt; <span class="symbol">:live</span> )&#x000A;</pre></div>
-          </div>
-          <p>Validate IPN message received by rails app</p>
-          <div class="CodeRay">
-            <div class="code"><pre>ipn_message = request.raw_post  <span class="comment"># raw post data send by PayPal IPN</span>&#x000A;<span class="keyword">if</span> <span class="constant">PayPal</span>::<span class="constant">SDK</span>::<span class="constant">Core</span>::<span class="constant">API</span>::<span class="constant">IPN</span>.valid?(ipn_message)&#x000A;  print <span class="string"><span class="delimiter">&quot;</span><span class="content">IPN message is valid</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="keyword">end</span></pre></div>
-          </div>
-        </article>
-        <article>
-          <header>
-            <div class='pull-right'>
               <span class="icon-tag"></span> <a href="/tags/ruby/">ruby</a>
               <span class='icon-time'></span>
               12 May 2013
@@ -98,5 +70,16 @@
         </ul>
       </div>
     </div>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16128639-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html>
