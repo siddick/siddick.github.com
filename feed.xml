@@ -2,13 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://siddick.com/</id>
   <title>Siddick Blog</title>
-  <updated>2013-05-11T18:30:00Z</updated>
+  <updated>2017-02-21T18:30:00Z</updated>
   <link rel="alternate" href="http://siddick.com/"/>
   <link rel="self" href="http://siddick.com/feed.xml"/>
   <author>
     <name>siddick</name>
     <uri>https://github.com/siddick</uri>
   </author>
+  <entry>
+    <id>tag:siddick.com,2017-02-22:/starting-with-webpack/</id>
+    <title type="html">Starting with WebPack</title>
+    <published>2017-02-21T18:30:00Z</published>
+    <updated>2017-02-21T18:30:00Z</updated>
+    <link rel="alternate" href="http://siddick.com/starting-with-webpack/"/>
+    <content type="html">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create application directory for the webpack project.&lt;/p&gt;
+    &lt;div class="CodeRay"&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;mkdir app &amp;amp;&amp;amp; cd app&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install dependent node modules&lt;/p&gt;
+    &lt;div class="CodeRay"&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;npm init --yes&amp;#x000A;npm install webpack webpack-dev-server -g&amp;#x000A;npm install webpack html-webpack-plugin --save-dev&amp;#x000A;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a sample javascript file(&lt;code&gt;app.js&lt;/code&gt;)&lt;/p&gt;
+    &lt;div class="CodeRay"&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;document.write(&lt;span class="string"&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;span class="content"&gt;&amp;lt;h1&amp;gt;Hello World!&amp;lt;/h1&amp;gt;&lt;/span&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;/span&gt;);&amp;#x000A;&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a sample webpack configuration file(&lt;code&gt;webpack.config.js&lt;/code&gt;)&lt;/p&gt;
+    &lt;div class="CodeRay"&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;&lt;span class="keyword"&gt;var&lt;/span&gt; HtmlWebpackPlugin = require(&lt;span class="string"&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;span class="content"&gt;html-webpack-plugin&lt;/span&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;/span&gt;);&amp;#x000A;module.exports = {&amp;#x000A;    &lt;span class="key"&gt;entry&lt;/span&gt;: &lt;span class="string"&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;span class="content"&gt;./app.js&lt;/span&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;/span&gt;,&amp;#x000A;    &lt;span class="key"&gt;output&lt;/span&gt;: {&amp;#x000A;        &lt;span class="key"&gt;path&lt;/span&gt;: (__dirname + &lt;span class="string"&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;span class="content"&gt;/.build&lt;/span&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;/span&gt;),&amp;#x000A;        &lt;span class="key"&gt;filename&lt;/span&gt;: &lt;span class="string"&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;span class="content"&gt;app.js&lt;/span&gt;&lt;span class="delimiter"&gt;'&lt;/span&gt;&lt;/span&gt;&amp;#x000A;    },&amp;#x000A;    &lt;span class="key"&gt;plugins&lt;/span&gt;: [&amp;#x000A;        &lt;span class="keyword"&gt;new&lt;/span&gt; HtmlWebpackPlugin()&amp;#x000A;    ]&amp;#x000A;};&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run Webpack dev server&lt;/p&gt;
+    &lt;div class="CodeRay"&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;webpack-dev-server --open --inline&lt;/pre&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Open the application &lt;a href="http://localhost:8080/"&gt;http://localhost:8080/&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:siddick.com,2013-05-12:/hello-world/</id>
     <title type="html">Hello World</title>
@@ -17,7 +60,7 @@
     <link rel="alternate" href="http://siddick.com/hello-world/"/>
     <content type="html">&lt;p&gt;Just a hello world program&lt;/p&gt;
 
-&lt;div&gt;&lt;div class="CodeRay"&gt;
+&lt;div class="language-ruby highlighter-coderay"&gt;&lt;div class="CodeRay"&gt;
   &lt;div class="code"&gt;&lt;pre&gt;&lt;span class="keyword"&gt;def&lt;/span&gt; &lt;span class="function"&gt;hello&lt;/span&gt;
   puts &lt;span class="string"&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;span class="content"&gt;hello world&lt;/span&gt;&lt;span class="delimiter"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
 &lt;span class="keyword"&gt;end&lt;/span&gt;
@@ -27,3 +70,4 @@
 </content>
   </entry>
 </feed>
+
