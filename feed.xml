@@ -17,7 +17,7 @@
     <link rel="alternate" href="http://siddick.com/starting-with-webpack/"/>
     <content type="html">&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Create application directory for the webpack project.&lt;/p&gt;
+    &lt;p&gt;Create application directory for webpack project.&lt;/p&gt;
     &lt;div class="CodeRay"&gt;
       &lt;div class="code"&gt;&lt;pre&gt;mkdir app &amp;amp;&amp;amp; cd app&lt;/pre&gt;&lt;/div&gt;
     &lt;/div&gt;
@@ -25,7 +25,7 @@
   &lt;li&gt;
     &lt;p&gt;Install dependent node modules&lt;/p&gt;
     &lt;div class="CodeRay"&gt;
-      &lt;div class="code"&gt;&lt;pre&gt;npm init --yes&amp;#x000A;npm install webpack webpack-dev-server -g&amp;#x000A;npm install webpack html-webpack-plugin --save-dev&amp;#x000A;&lt;/pre&gt;&lt;/div&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;npm init --yes&amp;#x000A;npm install webpack webpack-dev-server html-webpack-plugin --save-dev&amp;#x000A;&lt;/pre&gt;&lt;/div&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -43,7 +43,7 @@
   &lt;li&gt;
     &lt;p&gt;Run Webpack dev server&lt;/p&gt;
     &lt;div class="CodeRay"&gt;
-      &lt;div class="code"&gt;&lt;pre&gt;webpack-dev-server --open --inline&lt;/pre&gt;&lt;/div&gt;
+      &lt;div class="code"&gt;&lt;pre&gt;./node_modules/.bin/webpack-dev-server --open --inline&lt;/pre&gt;&lt;/div&gt;
     &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
