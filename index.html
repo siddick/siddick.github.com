@@ -11,106 +11,106 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div class='navbar navbar-default navbar-static-top'>
-        <div class='navbar-inner'>
-          <div class='container'>
-            <div class='social-icons pull-right'>
-              <a href='https://github.com/siddick'>
-                <span class='fa fa-github'></span>
-              </a>
-              <a href='https://twitter.com/2siddick'>
-                <span class='fa fa-twitter'></span>
-              </a>
-              <a href='http://www.facebook.com/siddick'>
-                <span class='fa fa-facebook'></span>
-              </a>
-            </div>
-            <ul class='navbar-nav nav'>
-              <li>
-                <a class='logo' title='Siddick'>
-                  <i class='fa fa-strikethrough fa-lg'></i>
-                </a>
-              </li>
-              <li class="active"><a href="/">Home</a></li>
-              <li class=""><a href="/about/">About</a></li>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-11'>
+          <div id='content'>
+            
+            <article>
+              <header class='page-header'>
+                <div class='pull-right'>
+                  <span class="fa fa-tag"></span> <a href="/tags/webpack/">webpack</a>
+                  <span class='fa fa-calendar'></span>
+                  22 Feb
+                </div>
+                <h4>
+                  <span class='fa fa-briefcase'></span>
+                  <a href="/starting-with-webpack/">Starting with WebPack</a>
+                </h4>
+              </header>
+              <ol>
+                <li>
+                  <p>Create application directory for webpack project.</p>
+                  <div class="CodeRay">
+                    <div class="code"><pre>mkdir app &amp;&amp; cd app</pre></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Install dependent node modules</p>
+                  <div class="CodeRay">
+                    <div class="code"><pre>npm init --yes&#x000A;npm install webpack webpack-dev-server html-webpack-plugin --save-dev&#x000A;</pre></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Create a sample javascript file(<code>app.js</code>)</p>
+                  <div class="CodeRay">
+                    <div class="code"><pre>document.write(<span class="string"><span class="delimiter">'</span><span class="content">&lt;h1&gt;Hello World!&lt;/h1&gt;</span><span class="delimiter">'</span></span>);&#x000A;</pre></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Create a sample webpack configuration file(<code>webpack.config.js</code>)</p>
+                  <div class="CodeRay">
+                    <div class="code"><pre><span class="keyword">var</span> HtmlWebpackPlugin = require(<span class="string"><span class="delimiter">'</span><span class="content">html-webpack-plugin</span><span class="delimiter">'</span></span>);&#x000A;module.exports = {&#x000A;    <span class="key">entry</span>: <span class="string"><span class="delimiter">'</span><span class="content">./app.js</span><span class="delimiter">'</span></span>,&#x000A;    <span class="key">output</span>: {&#x000A;        <span class="key">path</span>: (__dirname + <span class="string"><span class="delimiter">'</span><span class="content">/.build</span><span class="delimiter">'</span></span>),&#x000A;        <span class="key">filename</span>: <span class="string"><span class="delimiter">'</span><span class="content">app.js</span><span class="delimiter">'</span></span>&#x000A;    },&#x000A;    <span class="key">plugins</span>: [&#x000A;        <span class="keyword">new</span> HtmlWebpackPlugin()&#x000A;    ]&#x000A;};</pre></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Run Webpack dev server</p>
+                  <div class="CodeRay">
+                    <div class="code"><pre>./node_modules/.bin/webpack-dev-server --open --inline</pre></div>
+                  </div>
+                </li>
+                <li>
+                  <p>Open the application <a href="http://localhost:8080/">http://localhost:8080/</a></p>
+                </li>
+              </ol>
+            </article>
+            <article>
+              <header class='page-header'>
+                <div class='pull-right'>
+                  <span class="fa fa-tag"></span> <a href="/tags/ruby/">ruby</a>
+                  <span class='fa fa-calendar'></span>
+                  12 May 2013
+                </div>
+                <h4>
+                  <span class='fa fa-film'></span>
+                  <a href="/hello-world/">Hello World</a>
+                </h4>
+              </header>
+              <p>Just a hello world program</p>
+              
+              <div class="language-ruby highlighter-coderay"><div class="CodeRay">
+                <div class="code"><pre><span class="keyword">def</span> <span class="function">hello</span>&#x000A;  puts <span class="string"><span class="delimiter">&quot;</span><span class="content">hello world</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="keyword">end</span></pre></div>
+              </div>
+              </div>
+            </article>
+            <ul class='pager'>
             </ul>
           </div>
         </div>
-      </div>
-    </header>
-    <div class='container'>
-      <div id='content'>
-        
-        <article>
-          <header class='page-header'>
-            <div class='pull-right'>
-              <span class="fa fa-tag"></span> <a href="/tags/webpack/">webpack</a>
-              <span class='fa fa-calendar'></span>
-              22 Feb 2017
+        <div class='col-sm-1'>
+          <div class='social-icons affix affix-top'>
+            <div class='row'>
+              <a class='col-sm-12' href='/'>
+                <i class='fa fa-home'></i>
+              </a>
             </div>
-            <h4>
-              <span class='fa fa-briefcase'></span>
-              <a href="/starting-with-webpack/">Starting with WebPack</a>
-            </h4>
-          </header>
-          <ol>
-            <li>
-              <p>Create application directory for webpack project.</p>
-              <div class="CodeRay">
-                <div class="code"><pre>mkdir app &amp;&amp; cd app</pre></div>
-              </div>
-            </li>
-            <li>
-              <p>Install dependent node modules</p>
-              <div class="CodeRay">
-                <div class="code"><pre>npm init --yes&#x000A;npm install webpack webpack-dev-server html-webpack-plugin --save-dev&#x000A;</pre></div>
-              </div>
-            </li>
-            <li>
-              <p>Create a sample javascript file(<code>app.js</code>)</p>
-              <div class="CodeRay">
-                <div class="code"><pre>document.write(<span class="string"><span class="delimiter">'</span><span class="content">&lt;h1&gt;Hello World!&lt;/h1&gt;</span><span class="delimiter">'</span></span>);&#x000A;</pre></div>
-              </div>
-            </li>
-            <li>
-              <p>Create a sample webpack configuration file(<code>webpack.config.js</code>)</p>
-              <div class="CodeRay">
-                <div class="code"><pre><span class="keyword">var</span> HtmlWebpackPlugin = require(<span class="string"><span class="delimiter">'</span><span class="content">html-webpack-plugin</span><span class="delimiter">'</span></span>);&#x000A;module.exports = {&#x000A;    <span class="key">entry</span>: <span class="string"><span class="delimiter">'</span><span class="content">./app.js</span><span class="delimiter">'</span></span>,&#x000A;    <span class="key">output</span>: {&#x000A;        <span class="key">path</span>: (__dirname + <span class="string"><span class="delimiter">'</span><span class="content">/.build</span><span class="delimiter">'</span></span>),&#x000A;        <span class="key">filename</span>: <span class="string"><span class="delimiter">'</span><span class="content">app.js</span><span class="delimiter">'</span></span>&#x000A;    },&#x000A;    <span class="key">plugins</span>: [&#x000A;        <span class="keyword">new</span> HtmlWebpackPlugin()&#x000A;    ]&#x000A;};</pre></div>
-              </div>
-            </li>
-            <li>
-              <p>Run Webpack dev server</p>
-              <div class="CodeRay">
-                <div class="code"><pre>./node_modules/.bin/webpack-dev-server --open --inline</pre></div>
-              </div>
-            </li>
-            <li>
-              <p>Open the application <a href="http://localhost:8080/">http://localhost:8080/</a></p>
-            </li>
-          </ol>
-        </article>
-        <article>
-          <header class='page-header'>
-            <div class='pull-right'>
-              <span class="fa fa-tag"></span> <a href="/tags/ruby/">ruby</a>
-              <span class='fa fa-calendar'></span>
-              12 May 2013
+            <div class='row'>
+              <a class='col-sm-12' href='https://github.com/siddick'>
+                <span class='fa fa-github'></span>
+              </a>
             </div>
-            <h4>
-              <span class='fa fa-film'></span>
-              <a href="/hello-world/">Hello World</a>
-            </h4>
-          </header>
-          <p>Just a hello world program</p>
-          
-          <div class="language-ruby highlighter-coderay"><div class="CodeRay">
-            <div class="code"><pre><span class="keyword">def</span> <span class="function">hello</span>&#x000A;  puts <span class="string"><span class="delimiter">&quot;</span><span class="content">hello world</span><span class="delimiter">&quot;</span></span>&#x000A;<span class="keyword">end</span></pre></div>
+            <div class='row'>
+              <a class='col-sm-12' href='https://twitter.com/2siddick'>
+                <span class='fa fa-twitter'></span>
+              </a>
+            </div>
+            <div class='row'>
+              <a class='col-sm-12' href='http://www.facebook.com/siddick'>
+                <span class='fa fa-facebook'></span>
+              </a>
+            </div>
           </div>
-          </div>
-        </article>
-        <ul class='pager'>
-        </ul>
+        </div>
       </div>
     </div>
     <script>
